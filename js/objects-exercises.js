@@ -128,47 +128,6 @@
 //         email: 'user2@email.com'
 //     }
 // ]
-// Create a function, makeSandwhichObjects() that takes in two array of strings, breads and fillings and returns an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
-//
-//     Example Input:
-//
-//     var breads  = [
-//         "white",
-//         "wheat",
-//         "rhy",
-//         "white"
-//     ];
-//
-// var fillings = [
-//     "pb&j",
-//     "ham",
-//     "cheese steak",
-//     "tuna"
-// ];
-//
-// makeSandwhichObjects(breads, fillings)
-// Example Output:
-//
-//     [
-//         {
-//             bread: "white,
-//             filling: "pb&j"
-//         },
-//         {
-//             bread: "wheat",
-//             filling: "ham"
-//         },
-//         {
-//             bread: "rhy",
-//             filling: "cheese steak"
-//         },
-//         {
-//             bread: "white",
-//             filling: "tuna"
-//         }
-//     ]
-//
-//
 // ___________________________________
 //
 // https://www.rithmschool.com/courses/javascript/javascript-arrays-exercise
@@ -179,12 +138,6 @@
 // 4.Write the command to add "Matt" to the front of the array.
 // 5.Write the command to add your name to the end of the array.
 // 6.Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
-// 7.Write the command to make a copy of the array using slice. The copy should NOT include "Mary" or "Matt".
-// 8.Write the command that gives the indexOf where "Mary" is located.
-// 9.Write the command that gives the indexOf where "Foo" is located (this should return -1).
-// 10.Redefine the people variable with the value you started with. Using the splice command, remove "Devon" from the array and add "Elizabeth" and "Artie". Your array should look like this when you are done ["Greg", "Mary", "Elizabeth", "Artie", "James"].
-// 11.Create a new variable called withBob and set it equal to the people array concatenated with the string of "Bob".
-//
 //
 //     ____________________________________
 //

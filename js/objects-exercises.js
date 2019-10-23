@@ -28,28 +28,27 @@ function getOlder(arr,index){
 
 // Write a function, washCars() that takes in a array of car objects and sets the boolean properties of isDirty to false.
 //
-//     Example input:
-//
-//     [
-//         {
-//             make: 'Volvo',
-//             color: 'red',
-//             year: 1996,
-//             isDirty: true
-//         },
-//         {
-//             make: 'Toyota',
-//             color: 'black',
-//             year: 2004,
-//             isDirty: false
-//         },
-//         {
-//             make: 'Ford',
-//             color: 'white',
-//             year: 2007,
-//             isDirty: true
-//         }
-//     ]
+
+    var cars = [
+        {
+            make: 'Volvo',
+            color: 'red',
+            year: 1996,
+            isDirty: true
+        },
+        {
+            make: 'Toyota',
+            color: 'black',
+            year: 2004,
+            isDirty: false
+        },
+        {
+            make: 'Ford',
+            color: 'white',
+            year: 2007,
+            isDirty: true
+        }
+    ]
 // Example output
 //
 //     [
@@ -72,6 +71,16 @@ function getOlder(arr,index){
 //             isDirty: false // changed to false
 //         }
 //     ]
+
+
+function changeToFalse (carArray) {
+    carArray.forEach (function (car) {
+        car.isDirty = false
+    });
+    return carArray;
+}
+
+console.log(changeToFalse(cars));
 // ___________________________________
 //
 // https://www.rithmschool.com/courses/javascript/javascript-arrays-exercise

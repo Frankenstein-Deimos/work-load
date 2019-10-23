@@ -57,7 +57,7 @@ BONUS
 - Make the moles appear more often after each click.
 
 ###3. Change Text Style - external source
-
+=============================andrew======================================
 Source: https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
 
 Problem #1: Modify the style of the paragraph text through javascript code.
@@ -102,7 +102,7 @@ source https://edabit.com/challenge/LvtsCQNpx7CwHGubf
 ========================================================================
 
 ##Objects
-
+======================andrew==============================
 ###1.Write a function, washCars() that takes in a array of car objects and sets the boolean properties of isDirty to false.
 
 Example input:

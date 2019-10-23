@@ -9,7 +9,7 @@
 // hashPlusCount("") ➞ [0, 0]
 // source https://edabit.com/challenge/ydBcGvv3n447nbxCy
 
-
+// ----------------Chris---------------------------
 
 // Write a JavaScript program to construct the following pattern, using a nested for loop.
 //
@@ -19,6 +19,12 @@
 // * * * *
 // * * * * *
 // source https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
+
+function starPattern(){
+    for(var i=1; i<=5; i++){
+        console.log("*".repeat(i));
+    }
+}
 
 
 // Create a function that takes a string as an argument and converts the first character of each word to uppercase. Return the newly formatted string.

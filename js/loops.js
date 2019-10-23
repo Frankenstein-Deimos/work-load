@@ -31,3 +31,18 @@
 //
 // makeTitle("PIZZA PIZZA PIZZA") ➞ "PIZZA PIZZA PIZZA"
 // source https://edabit.com/challenge/LvtsCQNpx7CwHGubf
+
+
+function firstCapital (str) {
+var words = str.split(" ");
+for (var i = 0; i < words.length; i++) {
+    var index = words[i];
+    index = index.split('');
+    index[0] = index[0].toUpperCase();
+    words[i] = index.join('');
+}
+return words.join(' ');
+}
+
+console.log(firstCapital("andrew swint"))
+

@@ -19,7 +19,7 @@
             document.getElementById("timer").innerHTML = gameTimer;
         }
         if (gameTimer === -1) {
-            alert("Game Over!");
+            alert("Score: " + score + " moles were whacked!" + "\n" + "Game Over!");
         }
         gameTimer--;
     }

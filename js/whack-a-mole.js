@@ -24,8 +24,6 @@
         gameTimer--;
     }
 
-    var gameTimerUpdate = setInterval(updateTimer, convertSeconds(1));
-
     // ==== MOLE DISPLAY ====
     // function displayMole() {
     //
@@ -35,4 +33,13 @@
     // function moleWhacked() {
     //
     // }
+
+    // ==== PLAY BUTTON CLICKED ====
+    var playListener = function (playClicked) {
+        // Set the timer on the HTML document
+        document.getElementById("timer").innerHTML = gameTimer;
+        var gameTimerUpdate = setInterval(updateTimer, convertSeconds(1));
+    };
+
+    document.getElementById('play-button').addEventListener('click', playListener, false);
 })();

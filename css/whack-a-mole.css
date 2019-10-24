@@ -54,12 +54,14 @@ p {
     height: 8em;
     width: 8em;
 }
+
 /* ==== PLAY BUTTON ==== */
 .play-button-container {
     display: flex;
     justify-content: center;
     margin: 1em;
 }
+
 .play-button {
     width: 10em;
     height: 3em;
@@ -69,7 +71,8 @@ p {
     border-radius: 10px;
     background-color: white;
 }
-button.play-button:hover{
+
+button.play-button:hover {
     background-color: green;
     color: white;
 }

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* ==== HEADER ==== */
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* ==== GAME INFO ==== */
+.game-information-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.instruction-message {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.score-board {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* ==== GAME BOARD ==== */
+.game-board-container {
+    display: flex;
+    justify-content: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: 10em 10em 10em;
+    grid-template-rows: 10em 10em 10em;
+}
+
+.game-tile {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid black;
+    height: 10em;
+    width: 10em;
+}

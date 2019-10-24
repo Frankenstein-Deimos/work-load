@@ -42,8 +42,8 @@ p {
 
 .game-board {
     display: grid;
-    grid-template-columns: 10em 10em 10em;
-    grid-template-rows: 10em 10em 10em;
+    grid-template-columns: 8em 8em 8em;
+    grid-template-rows: 8em 8em 8em;
 }
 
 .game-tile {
@@ -51,6 +51,24 @@ p {
     justify-content: center;
     align-content: center;
     border: 2px solid black;
-    height: 10em;
+    height: 8em;
+    width: 8em;
+}
+/* ==== PLAY BUTTON ==== */
+.play-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+.play-button {
     width: 10em;
+    height: 3em;
+    font-size: 24px;
+    outline: none;
+    border: 2px solid green;
+    background-color: white;
+}
+button.play-button:hover{
+    background-color: green;
+    color: white;
 }

@@ -1,9 +1,5 @@
 (function () {
     "use strict";
-    // TODO: MAKE A PAUSE GAME BUTTON
-    // TODO: MAKE A HIGH SCORE BUTTON TO DISPLAY HIGH SCORES
-    // Do not show button while game is in progress. Show button before game begins/during game pause.
-    console.log("hello");
 
     var score = 0;
 
@@ -12,6 +8,7 @@
     }
 
     // ==== GAME TIMER ====
+
     var actualTime = 30;
     var gameTimer = actualTime;
 
@@ -22,20 +19,19 @@
             gameTimer--;
         } else if (gameTimer === -1) {
             alert("Score: " + score + " moles were whacked!" + "\n" + "Game Over!");
-            console.log(gameTimer);
             // STOP INTERVALS TO REFLECT 'NEW GAME' WHEN PLAY-BUTTON IS CLICKED
             clearInterval(gameTimerUpdate);
             clearInterval(molePopup);
+            clearTimeout(removeMole);
             // RESET BUTTONS
             document.getElementById("play-button").disabled = false;
             document.getElementById("pause-button").disabled = true;
         }
-        // gameTimer--;
     }
 
     // ==== MOLE DISPLAY ====
+
     var moleHomes = document.getElementsByClassName("game-tile");
-    console.log(moleHomes);
 
     // Set variables global to allow modifications
     var removeMole;
@@ -51,34 +47,39 @@
         if (gameTimer > 0) {
             set.innerHTML += "<img src=\"img/diglett.png\" alt=\"mole\" id=\"mole\" class=\"moleStyle\">";
         }
+        // WHEN MOLE IS CLICKED
+        document.getElementById('mole').onclick = function () {
+            score += 1;
+            document.getElementById("score-card").innerHTML = "Score: " + score;
+            moleLocationCatcher.innerHTML = "";
+        };
+
         // Delay mole location change : removes mole from game-tile
         var removeMole = setTimeout(function () {
             set.innerHTML = "";
-        }, convertSeconds(1.5));
+        }, convertSeconds(1.25));
     }
 
-    // ==== MOLE CLICKED ====
-    // var moleListener = function (moleClicked) {
-
-    // };
-
     // ==== PLAY BUTTON CLICKED ====
+
     // Set intervals global to allow pause-button to modify
     var gameTimerUpdate;
     var molePopup;
     var playListener = function (playClicked) {
         if (gameTimer === -1) {
             gameTimer = actualTime;
+            score = 0;
         }
         // Enable pause button on click
         document.getElementById("pause-button").disabled = false;
         // Disable play button on click
         document.getElementById("play-button").disabled = true;
         gameTimerUpdate = setInterval(updateTimer, convertSeconds(1));
-        molePopup = setInterval(displayMole, convertSeconds(2));
+        molePopup = setInterval(displayMole, convertSeconds(1.5));
     };
 
     // ==== PAUSE BUTTON CLICKED ====
+
     // DEFAULT: pause-button disabled : explain purpose with demo; uncaught error, also user shouldn't be able to pause a game that hasn't started
     document.getElementById("pause-button").disabled = true;
     var pauseListener = function (pauseClicked) {

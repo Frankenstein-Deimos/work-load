@@ -66,6 +66,10 @@ p {
     width: 7em;
 }
 
+.moleHide {
+    display: none;
+}
+
 /* ==== PLAY BUTTON ==== */
 .play-button-container {
     display: flex;

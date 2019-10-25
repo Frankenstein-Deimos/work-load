@@ -94,3 +94,29 @@ console.log(changeToFalse(cars));
 //
 //     ____________________________________
 
+// ==== COMPLETED BY MIGUEL ====
+
+var people = ["Greg", "Mary", "Devon", "James"];
+
+people.forEach(function(person) {
+    console.log(person);
+});
+// Remove the first item in the array
+people.shift();
+console.log(people);
+// Remove the last item in the array
+people.pop();
+console.log(people);
+// Add an item to the beginning of the array
+people.unshift("Matt");
+console.log(people);
+// Add an item to the end of the array
+people.push("Miguel");
+console.log(people);
+for (var i = 0; i < people.length; i++) {
+    if (people[i] === "Mary") {
+        console.log(people[i]);
+        break;
+    }
+    console.log(people[i]);
+}

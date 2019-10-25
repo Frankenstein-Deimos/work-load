@@ -7,6 +7,31 @@
 // hashPlusCount("#+++#+#++#") ➞ [4, 6]
 //
 // hashPlusCount("") ➞ [0, 0]
+
+// ==== COMPLETED BY MIGUEL ====
+
+function hashPlusCount(x) {
+    var hashCounter = 0;
+    var plusCounter = 0;
+    var array =  x.split("");
+    array.forEach(function (character) {
+        if (character === "#") {
+            hashCounter++;
+        } else if (character === "+") {
+            plusCounter++
+        }
+    })
+    var result = [];
+    result.push(hashCounter);
+    result.push((plusCounter));
+
+    return result;
+}
+
+console.log(hashPlusCount("###+"));
+console.log(hashPlusCount("##+++#"));
+console.log(hashPlusCount("#+++#+#++#"));
+console.log(hashPlusCount(""));
 // source https://edabit.com/challenge/ydBcGvv3n447nbxCy
 
 // ----------------Chris---------------------------

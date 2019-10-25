@@ -71,11 +71,13 @@
             score = 0;
         }
         // Enable pause button on click
-        document.getElementById("pause-button").disabled = false;
-        // Disable play button on click
+        var pauseWait = setTimeout(function() {
+            pause.disabled = false;
+        }, convertSeconds(1.25));
         document.getElementById("play-button").disabled = true;
         gameTimerUpdate = setInterval(updateTimer, convertSeconds(1));
-        molePopup = setInterval(displayMole, convertSeconds(1.5));
+        molePopup = setInterval(displayMole, convertSeconds(1.25));
+        var pause = document.getElementById("pause-button");
     };
 
     // ==== PAUSE BUTTON CLICKED ====

@@ -37,7 +37,7 @@
     var moleHomes = document.getElementsByClassName("game-tile");
     console.log(moleHomes);
 
-    // Set variables global to allow pause button to modify
+    // Set variables global to allow modifications
     var removeMole;
     var moleLocationCatcher;
 
@@ -49,7 +49,7 @@
         moleLocationCatcher = set;
         // Only run while gameTimer is above 0
         if (gameTimer > 0) {
-            set.innerHTML += "<img src=\"img/diglett.png\" alt=\"mole\" class=\"moleStyle\">";
+            set.innerHTML += "<img src=\"img/diglett.png\" alt=\"mole\" id=\"mole\" class=\"moleStyle\">";
         }
         // Delay mole location change : removes mole from game-tile
         var removeMole = setTimeout(function () {
@@ -58,9 +58,9 @@
     }
 
     // ==== MOLE CLICKED ====
-    // function moleWhacked() {
-    //
-    // }
+    // var moleListener = function (moleClicked) {
+
+    // };
 
     // ==== PLAY BUTTON CLICKED ====
     // Set intervals global to allow pause-button to modify

@@ -12,34 +12,86 @@
     }
 
     // ==== GAME TIMER ====
-    var gameTimer = 30;
+    var actualTime = 30;
+    var gameTimer = actualTime;
 
     function updateTimer() {
         if (gameTimer >= 0) {
-            document.getElementById("timer").innerHTML = gameTimer;
-        }
-        if (gameTimer === -1) {
+            // SET TIMER ON HTML
+            document.getElementById("timer").innerHTML = "TIMER: " + gameTimer;
+            gameTimer--;
+        } else if (gameTimer === -1) {
             alert("Score: " + score + " moles were whacked!" + "\n" + "Game Over!");
+            console.log(gameTimer);
+            // STOP INTERVALS TO REFLECT 'NEW GAME' WHEN PLAY-BUTTON IS CLICKED
+            clearInterval(gameTimerUpdate);
+            clearInterval(molePopup);
+            // RESET BUTTONS
+            document.getElementById("play-button").disabled = false;
+            document.getElementById("pause-button").disabled = true;
         }
-        gameTimer--;
+        // gameTimer--;
     }
 
     // ==== MOLE DISPLAY ====
-    // function displayMole() {
-    //
-    // }
+    var moleHomes = document.getElementsByClassName("game-tile");
+    console.log(moleHomes);
+
+    // Set variables global to allow modifications
+    var removeMole;
+    var moleLocationCatcher;
+
+    function displayMole() {
+        // Generate a number between 0 and 8 representing game-tiles on game-board
+        var randomHome = Math.floor(Math.random() * 8) + 1;
+        // Select random div A.k.a. moleHome
+        var set = moleHomes[randomHome];
+        moleLocationCatcher = set;
+        // Only run while gameTimer is above 0
+        if (gameTimer > 0) {
+            set.innerHTML += "<img src=\"img/diglett.png\" alt=\"mole\" id=\"mole\" class=\"moleStyle\">";
+        }
+        // Delay mole location change : removes mole from game-tile
+        var removeMole = setTimeout(function () {
+            set.innerHTML = "";
+        }, convertSeconds(1.5));
+    }
 
     // ==== MOLE CLICKED ====
-    // function moleWhacked() {
-    //
-    // }
+    // var moleListener = function (moleClicked) {
+
+    // };
 
     // ==== PLAY BUTTON CLICKED ====
+    // Set intervals global to allow pause-button to modify
+    var gameTimerUpdate;
+    var molePopup;
     var playListener = function (playClicked) {
-        // Set the timer on the HTML document
-        document.getElementById("timer").innerHTML = gameTimer;
-        var gameTimerUpdate = setInterval(updateTimer, convertSeconds(1));
+        if (gameTimer === -1) {
+            gameTimer = actualTime;
+        }
+        // Enable pause button on click
+        document.getElementById("pause-button").disabled = false;
+        // Disable play button on click
+        document.getElementById("play-button").disabled = true;
+        gameTimerUpdate = setInterval(updateTimer, convertSeconds(1));
+        molePopup = setInterval(displayMole, convertSeconds(2));
+    };
+
+    // ==== PAUSE BUTTON CLICKED ====
+    // DEFAULT: pause-button disabled : explain purpose with demo; uncaught error, also user shouldn't be able to pause a game that hasn't started
+    document.getElementById("pause-button").disabled = true;
+    var pauseListener = function (pauseClicked) {
+        // Enable play button on click
+        document.getElementById("play-button").disabled = false;
+        // Disable pause button on click
+        document.getElementById("pause-button").disabled = true;
+        clearInterval(gameTimerUpdate);
+        clearInterval(molePopup);
+        // Remove mole from game-board when paused.
+        moleLocationCatcher.innerHTML = "";
     };
 
     document.getElementById('play-button').addEventListener('click', playListener, false);
+    document.getElementById('pause-button').addEventListener('click', pauseListener, false);
 })();

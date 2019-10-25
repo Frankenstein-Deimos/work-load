@@ -53,10 +53,17 @@ p {
 .game-tile {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     border: 2px solid black;
     height: 8em;
     width: 8em;
+}
+
+/* ==== MOLE STYLING ==== */
+.moleStyle {
+    border-radius: 1em;
+    height: 7em;
+    width: 7em;
 }
 
 /* ==== PLAY BUTTON ==== */

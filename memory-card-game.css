@@ -1,0 +1,9 @@
+#user-table{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    height: 250px;
+    width: 170px;
+}

@@ -78,6 +78,7 @@
         gameTimerUpdate = setInterval(updateTimer, convertSeconds(1));
         molePopup = setInterval(displayMole, convertSeconds(1.25));
         var pause = document.getElementById("pause-button");
+        document.getElementById("score-card").classList.add("score-card")
     };
 
     // ==== PAUSE BUTTON CLICKED ====

@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("../img/whack-a-mole-backdrop.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
 h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -25,12 +34,17 @@ p {
 
 .timer {
     margin-right: 1em;
+    border-bottom: 3px solid gold;
 }
 
 .instruction-message {
     margin-top: 1em;
     display: flex;
     justify-content: center;
+}
+
+.score-card {
+    border-bottom: 3px solid gold;
 }
 
 .score-board {
@@ -49,6 +63,7 @@ p {
     display: grid;
     grid-template-columns: 8em 8em 8em;
     grid-template-rows: 8em 8em 8em;
+    background-color: rgba(153, 102, 51, 0.3);
 }
 
 .game-tile {
@@ -91,9 +106,10 @@ p {
     background-color: white;
 }
 
-button.play-button:hover {
+button.play-button:hover:enabled {
     background-color: green;
-    color: white;
+    color: yellow;
+    border-color: goldenrod;
 }
 
 /* ==== PAUSE BUTTON ==== */
@@ -102,6 +118,7 @@ button.play-button:hover {
     justify-content: center;
     margin: .25em;
 }
+
 .pause-button {
     width: 10em;
     height: 3em;
@@ -110,4 +127,10 @@ button.play-button:hover {
     border: 2px solid green;
     border-radius: 10px;
     background-color: white;
+}
+
+button.pause-button:hover:enabled {
+    background-color: green;
+    color: yellow;
+    border-color: goldenrod;
 }

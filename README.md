@@ -266,7 +266,7 @@ Exercise done by: Chris
 ### 1. Key Pressed Counter
 
 ----
-Exercise in progress by: 
+Exercise in progress by: Andrew
 
 ----
 
@@ -326,7 +326,7 @@ Generate a progress bar that is responsive to buttons with preset values.
 ### 3. Make Breakout
 
 ----
-Exercise in progress by: 
+Exercise in progress by: Andrew
 
 ----
 
@@ -372,6 +372,8 @@ Source: https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_gam
 3. Change the style of the book depending on whether you have read it or not.
 
 ### 2. About Me
+
+Andrew
 
 1. Start with this HTML and save it as `about_me.html`
 

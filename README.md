@@ -305,3 +305,37 @@ Exercise in progress by: Miguel
 Create a simple calculator using javascript
 
 Source: https://java.codeup.com/javascript-i/bom-and-dom/calculator/
+
+
+## Andrew's Provided Exercises
+
+### 1. Animated Icon
+
+----
+Exercise in progress by: 
+
+----
+
+Create an animated icon on a mapbox map. Add your animation to three different locations on your map. Can you generate different icons for each?
+
+### 2. Responsive Progress Bar
+
+----
+Exercise in progress by: 
+
+----
+
+Generate a progress bar that is responsive to buttons with preset values. Each button pushed should change the progress bar.
+
+### 3. Make Breakout
+
+----
+Exercise in progress by: 
+
+----
+
+MDN has a tutorial for making breakout. It seems fairly step by step and might be fun. Let me know what you think.
+
+https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
+
+

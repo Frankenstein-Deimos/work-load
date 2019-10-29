@@ -1,10 +1,10 @@
-#POD ASSESSMENT 1
+# POD ASSESSMENT 1
 
-##GROUP NAME: FRANKESTEIN
+## GROUP NAME: FRANKESTEIN
 
 Below is a designated list separated by each individual. Below each numbered exercise is the name of the individual who completed the exercise.
 
-##BOM & DOM
+## BOM & DOM
 
 ### 1. Memory Card Game
 
@@ -66,7 +66,7 @@ BONUS
 
 Source: https://java.codeup.com/jquery/whack-a-mole/create-game/
 
-###3. Change Text Style - external source
+### 3. Change Text Style - external source
 
 ----
 Exercise done by: Andrew
@@ -77,9 +77,9 @@ Modify the style of the paragraph text through javascript code.
 
 Source: https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
 
-##LOOPS
+## LOOPS
 
-###1. Create a function that returns the number of hashes and pluses in a string.
+### 1. Create a function that returns the number of hashes and pluses in a string.
 
 ----
 Exercise done by: Miguel
@@ -98,7 +98,7 @@ hashPlusCount("") ➞ [0, 0]
 
 Source: https://edabit.com/challenge/ydBcGvv3n447nbxCy
 
-###2. Write a JavaScript program to construct the following pattern, using a nested for loop.
+### 2. Write a JavaScript program to construct the following pattern, using a nested for loop.
 
 ----
 Exercise done by: Chris
@@ -118,7 +118,7 @@ Exercise done by: Chris
 Source: https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
 
 
-###3. Create a function that takes a string as an argument and converts the first character of each word to uppercase. Return the newly formatted string.
+### 3. Create a function that takes a string as an argument and converts the first character of each word to uppercase. Return the newly formatted string.
 
 ----
 Exercise done by: Andrew
@@ -135,9 +135,9 @@ makeTitle("I Like Pizza") ➞ "I Like Pizza"
 makeTitle("PIZZA PIZZA PIZZA") ➞ "PIZZA PIZZA PIZZA"
 source https://edabit.com/challenge/LvtsCQNpx7CwHGubf
 
-##Objects
+## Objects
 
-###1.Write a function, washCars() that takes in a array of car objects and sets the boolean properties of isDirty to false.
+### 1. Write a function, washCars() that takes in a array of car objects and sets the boolean properties of isDirty to false.
 
 ----
 Exercise done by: Andrew
@@ -194,7 +194,7 @@ Example output
   }
 ]
 
-###2. External source exercise 
+### 2. External source exercise 
 
 ----
 Exercise done by: Miguel
@@ -218,7 +218,7 @@ var people = ["Greg", "Mary", "Devon", "James"];
 
 Source: https://www.rithmschool.com/courses/javascript/javascript-arrays-exercise
 
-###3.Write a function, getOlder() that takes in array of dog objects and increases the value of each object's age property by 1.
+### 3. Write a function, getOlder() that takes in array of dog objects and increases the value of each object's age property by 1.
 
 ----
 Exercise done by: Chris
@@ -269,9 +269,9 @@ Example output
   }
 ]
 
-#POD ASSESSMENT 2
+# POD ASSESSMENT 2
 
-##Miguel's Provided Exercises
+## Miguel's Provided Exercises
 
 ### 1. Key Pressed Counter
 

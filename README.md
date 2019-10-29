@@ -2,13 +2,16 @@
 
 ##GROUP NAME: FRANKESTEIN
 
-Below is a designated list separated by individual
+Below is a designated list separated by each individual. Below each numbered exercise is the name of the individual who completed the exercise.
 
 ##BOM & DOM
 
 ### 1. Memory Card Game
 
-Source: https://java.codeup.com/appendix/extra-challenges/memory-game/
+----
+Exercise done by: Chris
+
+----
 
 "Concentration, also known as Memory, Pelmanism, Shinkei-suijaku, Pexeso or Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn."
 
@@ -30,9 +33,14 @@ ADDITIONAL FEATURES:
 - Keep score, incrementing that score by a particular amount when a matching pair is found - and decrementing score when a failed attempt is made. Include that score when the round is completed, allowing it to be placed on the high score page.
 - Add sound effects on card click, successful match, round won and round lost. Special effect for new high score, including graphics, would be pretty sweet.
 
+Source: https://java.codeup.com/appendix/extra-challenges/memory-game/
+
 ### 2. Whack-A-Mole Game
 
-Source: https://java.codeup.com/jquery/whack-a-mole/create-game/
+----
+Exercise done by: Miguel
+
+----
 
 http://en.wikipedia.org/wiki/Whac-A-Mole is a popular game created in the 1970s. The game randomly has plastic (or wooden) moles pop out of holes, and the object of the game is to hit the moles and have them go back in their hole.
 
@@ -40,7 +48,7 @@ BUILDING WHACK-A-MOLE
 
 We will be building an online version of the Whack-A-Mole game using HTML, CSS, and jQuery.
 
-https://www.youtube.com/watch?v=IlQs7uzULs0
+Video Source: https://www.youtube.com/watch?v=IlQs7uzULs0
 
 To build this game, follow these steps:
 - Setup a new project locally and link it to your github.
@@ -56,19 +64,30 @@ BONUS
 - Keep the high score for the round. This does not need to persist between page loads, although it could if you wanted it to.
 - Make the moles appear more often after each click.
 
+Source: https://java.codeup.com/jquery/whack-a-mole/create-game/
+
 ###3. Change Text Style - external source
-=============================andrew======================================
+
+----
+Exercise done by: Andrew
+
+----
+
+Modify the style of the paragraph text through javascript code.
+
 Source: https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
-
-Problem #1: Modify the style of the paragraph text through javascript code.
-
-================================================================================
 
 ##LOOPS
 
 ###1. Create a function that returns the number of hashes and pluses in a string.
 
+----
+Exercise done by: Miguel
+
+----
+
 Examples:
+
 hashPlusCount("###+") ➞ [3, 1]
 
 hashPlusCount("##+++#") ➞ [3, 3]
@@ -76,19 +95,36 @@ hashPlusCount("##+++#") ➞ [3, 3]
 hashPlusCount("#+++#+#++#") ➞ [4, 6]
 
 hashPlusCount("") ➞ [0, 0]
-source https://edabit.com/challenge/ydBcGvv3n447nbxCy
+
+Source: https://edabit.com/challenge/ydBcGvv3n447nbxCy
 
 ###2. Write a JavaScript program to construct the following pattern, using a nested for loop.
 
-*
-* *
-* * *
-* * * *
-* * * * *
-source https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
+----
+Exercise done by: Chris
+
+----
+
+\*
+
+\* *
+
+\* * *
+
+\* * * *
+
+\* * * * *
+
+Source: https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
+
 
 ###3. Create a function that takes a string as an argument and converts the first character of each word to uppercase. Return the newly formatted string.
-----------Andrew-------------------------
+
+----
+Exercise done by: Andrew
+
+----
+
 Examples:
 makeTitle("This is a title") ➞ "This Is A Title"
 
@@ -99,11 +135,14 @@ makeTitle("I Like Pizza") ➞ "I Like Pizza"
 makeTitle("PIZZA PIZZA PIZZA") ➞ "PIZZA PIZZA PIZZA"
 source https://edabit.com/challenge/LvtsCQNpx7CwHGubf
 
-========================================================================
-
 ##Objects
-======================andrew==============================
+
 ###1.Write a function, washCars() that takes in a array of car objects and sets the boolean properties of isDirty to false.
+
+----
+Exercise done by: Andrew
+
+----
 
 Example input:
 
@@ -114,12 +153,14 @@ Example input:
     year: 1996,
     isDirty: true
   },
+  
   {
     make: 'Toyota',
     color: 'black',
     year: 2004,
     isDirty: false
   },
+  
   {
     make: 'Ford',
     color: 'white',
@@ -127,6 +168,7 @@ Example input:
     isDirty: true
   }
 ]
+
 Example output
 
 [
@@ -136,12 +178,14 @@ Example output
     year: 1996,
     isDirty: false // changed to false
   },
+  
   {
     make: 'Toyota',
     color: 'black',
     year: 2004,
     isDirty: false // stays the same
   },
+  
   {
     make: 'Ford',
     color: 'white',
@@ -150,21 +194,36 @@ Example output
   }
 ]
 
-###2. External source exercise https://www.rithmschool.com/courses/javascript/javascript-arrays-exercise
+###2. External source exercise 
+
+----
+Exercise done by: Miguel
+
+----
 
 var people = ["Greg", "Mary", "Devon", "James"];
 
 
 1.Using a loop, iterate through this array and console.log all of the people.
+
 2.Write the command to remove "Greg" from the array.
+
 3.Write the command to remove "James" from the array.
+
 4.Write the command to add "Matt" to the front of the array.
+
 5.Write the command to add your name to the end of the array.
+
 6.Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
 
+Source: https://www.rithmschool.com/courses/javascript/javascript-arrays-exercise
 
-----------------------Chris--------------------
 ###3.Write a function, getOlder() that takes in array of dog objects and increases the value of each object's age property by 1.
+
+----
+Exercise done by: Chris
+
+----
 
 Example input:
 
@@ -174,17 +233,20 @@ Example input:
     breed: "Pug",
     age: 7
   },
+  
   {
     name: "Freddy",
     breed: "Lab",
     age: 4
   },
+  
   {
     name: "Mr. Pig",
     breed: "Mastif",
     age: 10
   }
 ]
+
 Example output
 
 [
@@ -193,14 +255,53 @@ Example output
     breed: "Pug",
     age: 8
   },
+  
   {
     name: "Freddy",
     breed: "Lab",
     age: 5
   },
+  
   {
     name: "Mr. Pig",
     breed: "Mastiff",
     age: 11
   }
 ]
+
+#POD ASSESSMENT 2
+
+##Miguel's Provided Exercises
+
+### 1. Key Pressed Counter
+
+----
+Exercise in progress by: 
+
+----
+
+Every time the enter key is pressed, increment and display a counter that shows the total number of times the enter key has been pressed.
+
+Source: https://java.codeup.com/extra-exercises/javascript/dom-events/
+
+### 2. A Pile of Sandwiches
+
+----
+Exercise in progress by: 
+
+----
+
+Create a function, makeSandwhichObjects() that takes in two array of strings, breads and fillings and returns an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
+
+Source: https://java.codeup.com/extra-exercises/javascript/arrays-and-objects/
+
+### 3. Simple Calculator
+
+----
+Exercise in progress by: Miguel
+
+----
+
+Create a simple calculator using javascript
+
+Source: https://java.codeup.com/javascript-i/bom-and-dom/calculator/

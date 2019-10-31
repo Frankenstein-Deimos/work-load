@@ -120,3 +120,21 @@ for (var i = 0; i < people.length; i++) {
     }
     console.log(people[i]);
 }
+
+// ======================
+// Create a function, makeSandwhichObjects() that takes in two array of strings, breads and fillings and returns an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
+
+function makeSandwichObject(breads, fillings) {
+    var arr = [];
+    for (var i = 0; i < breads.length; i++) {
+        var obj = {};
+        obj.bread = breads[i];
+        arr.push(obj);
+    }
+    fillings.forEach(function (b, index) {
+        arr[index].filling = b, index;
+    });
+    return arr;
+}
+console.log(makeSandwichObject(breads,fillings));
+

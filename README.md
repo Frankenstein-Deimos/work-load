@@ -391,3 +391,10 @@ Add a script tag to the bottom of the HTML body.
 Iterate through each li and change the class to "list-item".
 (In the HTML head) Add a style tag that sets a rule for .list-item to make the color red.
 Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+
+## 3. Write a function named getRandomQuote().
+
+Inside of the function, create an array of strings where each string is a quote or thought you find inspirational
+getRandomQuote should generate a random number between 0 and the array's length minus 1
+use the randomly generated number as your index
+return a random quote.

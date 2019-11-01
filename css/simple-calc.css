@@ -1,0 +1,69 @@
+.calc-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    width: 15em;
+    height: 20em;
+    border: 1px solid red;
+}
+
+.calc-display {
+    grid-area: 1 / 1 / 2 / 5;
+}
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.pos-neg-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.percent-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.division-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/
+/*.clear-button {*/
+/*    grid-area:;*/
+/*}*/

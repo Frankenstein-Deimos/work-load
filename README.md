@@ -332,9 +332,11 @@ Exercise in progress by: Andrew
 
 ----
 
-MDN has a tutorial for making breakout. It seems fairly step by step and might be fun. Let me know what you think.
+Fade in and fade out all division elements.
 
-Source: https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
+https://www.w3resource.com/jquery-exercises/jquery-effects-exercises.php
+
+
 
 
 ## Chris' Provided Exercises

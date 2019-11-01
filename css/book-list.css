@@ -1,0 +1,12 @@
+.book-read {
+    color: green;
+}
+
+.book-image {
+    width: 4em;
+    height: 4em;
+}
+
+ul li:first-child {
+    list-style: none;
+}

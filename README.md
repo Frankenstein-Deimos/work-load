@@ -13,7 +13,7 @@ Exercise done by: Chris
 
 ----
 
-"Concentration, also known as Memory, Pelmanism, Shinkei-suijaku, Pexeso or Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn."
+> "Concentration, also known as Memory, Pelmanism, Shinkei-suijaku, Pexeso or Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn."
 
 http://en.wikipedia.org/wiki/Concentration_(game)
 
@@ -42,7 +42,7 @@ Exercise done by: Miguel
 
 ----
 
-http://en.wikipedia.org/wiki/Whac-A-Mole is a popular game created in the 1970s. The game randomly has plastic (or wooden) moles pop out of holes, and the object of the game is to hit the moles and have them go back in their hole.
+>http://en.wikipedia.org/wiki/Whac-A-Mole is a popular game created in the 1970s. The game randomly has plastic (or wooden) moles pop out of holes, and the object of the game is to hit the moles and have them go back in their hole.
 
 BUILDING WHACK-A-MOLE
 
@@ -51,12 +51,12 @@ We will be building an online version of the Whack-A-Mole game using HTML, CSS, 
 Video Source: https://www.youtube.com/watch?v=IlQs7uzULs0
 
 To build this game, follow these steps:
-- Setup a new project locally and link it to your github.
-- Create your HTML markup and CSS to position your holes. These will be element that your mole will pop in and out of.
-- Randomly select a hole on page load and change its background color to red. You may want to nest another element, and use an animated method like .fadeIn().
-- Change the red background to use an image. This could be a mole, or any other image you'd like to use.
-- Update the code to remove the mole when it is clicked.
-- Add score. Each time the mole is successfully clicked, increase the displayed score by 1.
+1. Setup a new project locally and link it to your github.
+2. Create your HTML markup and CSS to position your holes. These will be element that your mole will pop in and out of.
+3. Randomly select a hole on page load and change its background color to red. You may want to nest another element, and use an animated method like .fadeIn().
+4. Change the red background to use an image. This could be a mole, or any other image you'd like to use.
+5. Update the code to remove the mole when it is clicked.
+6. Add score. Each time the mole is successfully clicked, increase the displayed score by 1.
 
 BONUS
 - Add a start button. Don't start the game until the button is pressed.
@@ -86,15 +86,15 @@ Exercise done by: Miguel
 
 ----
 
-Examples:
+#### Examples:
 
-hashPlusCount("###+") ➞ [3, 1]
+`hashPlusCount("###+")` ➞ `[3, 1]`
 
-hashPlusCount("##+++#") ➞ [3, 3]
+`hashPlusCount("##+++#")` ➞ `[3, 3]`
 
-hashPlusCount("#+++#+#++#") ➞ [4, 6]
+`hashPlusCount("#+++#+#++#")` ➞ `[4, 6]`
 
-hashPlusCount("") ➞ [0, 0]
+`hashPlusCount("")` ➞ `[0, 0]`
 
 Source: https://edabit.com/challenge/ydBcGvv3n447nbxCy
 
@@ -104,16 +104,11 @@ Source: https://edabit.com/challenge/ydBcGvv3n447nbxCy
 Exercise done by: Chris
 
 ----
-
-\*
-
-\* *
-
-\* * *
-
-\* * * *
-
-\* * * * *
+    *
+    * *
+    * * *
+    * * * *
+    * * * * *
 
 Source: https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
 
@@ -125,14 +120,16 @@ Exercise done by: Andrew
 
 ----
 
-Examples:
-makeTitle("This is a title") ➞ "This Is A Title"
+#### Examples:
 
-makeTitle("capitalize every word") ➞ "Capitalize Every Word"
+`makeTitle("This is a title")` ➞ `"This Is A Title"`
 
-makeTitle("I Like Pizza") ➞ "I Like Pizza"
+`makeTitle("capitalize every word")` ➞ `"Capitalize Every Word"`
 
-makeTitle("PIZZA PIZZA PIZZA") ➞ "PIZZA PIZZA PIZZA"
+`makeTitle("I Like Pizza")` ➞ `"I Like Pizza"`
+
+`makeTitle("PIZZA PIZZA PIZZA")` ➞ `"PIZZA PIZZA PIZZA"`
+
 source https://edabit.com/challenge/LvtsCQNpx7CwHGubf
 
 ## Objects
@@ -144,55 +141,51 @@ Exercise done by: Andrew
 
 ----
 
-Example input:
+#### Example input:
 
-[
-  {
-    make: 'Volvo',
-    color: 'red',
-    year: 1996,
-    isDirty: true
-  },
-  
-  {
-    make: 'Toyota',
-    color: 'black',
-    year: 2004,
-    isDirty: false
-  },
-  
-  {
-    make: 'Ford',
-    color: 'white',
-    year: 2007,
-    isDirty: true
-  }
-]
+    [
+      {
+        make: 'Volvo',
+        color: 'red',
+        year: 1996,
+        isDirty: true
+      },
+      {
+        make: 'Toyota',
+        color: 'black',
+        year: 2004,
+        isDirty: false
+      },
+      {
+        make: 'Ford',
+        color: 'white',
+        year: 2007,
+        isDirty: true
+      }
+    ]
 
-Example output
+#### Example output:
 
-[
-  {
-    make: 'Volvo',
-    color: 'red',
-    year: 1996,
-    isDirty: false // changed to false
-  },
-  
-  {
-    make: 'Toyota',
-    color: 'black',
-    year: 2004,
-    isDirty: false // stays the same
-  },
-  
-  {
-    make: 'Ford',
-    color: 'white',
-    year: 2007,
-    isDirty: false // changed to false
-  }
-]
+    [
+      {
+        make: 'Volvo',
+        color: 'red',
+        year: 1996,
+        isDirty: false // changed to false
+      },
+      {
+        make: 'Toyota',
+        color: 'black',
+        year: 2004,
+        isDirty: false // stays the same
+      },
+      {
+        make: 'Ford',
+        color: 'white',
+        year: 2007,
+        isDirty: false // changed to false
+      }
+    ]
 
 ### 2. External source exercise 
 
@@ -200,21 +193,20 @@ Example output
 Exercise done by: Miguel
 
 ----
+    var people = ["Greg", "Mary", "Devon", "James"];
 
-var people = ["Greg", "Mary", "Devon", "James"];
 
+1. Using a loop, iterate through this array and console.log all of the people.
 
-1.Using a loop, iterate through this array and console.log all of the people.
+2. Write the command to remove "Greg" from the array.
 
-2.Write the command to remove "Greg" from the array.
+3. Write the command to remove "James" from the array.
 
-3.Write the command to remove "James" from the array.
+4. Write the command to add "Matt" to the front of the array.
 
-4.Write the command to add "Matt" to the front of the array.
+5. Write the command to add your name to the end of the array.
 
-5.Write the command to add your name to the end of the array.
-
-6.Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
+6. Using a loop, iterate through this array and after console.log-ing "Mary", exit from the loop.
 
 Source: https://www.rithmschool.com/courses/javascript/javascript-arrays-exercise
 
@@ -225,49 +217,47 @@ Exercise done by: Chris
 
 ----
 
-Example input:
+#### Example input:
 
-[
-  {
-    name: "Chompers",
-    breed: "Pug",
-    age: 7
-  },
-  
-  {
-    name: "Freddy",
-    breed: "Lab",
-    age: 4
-  },
-  
-  {
-    name: "Mr. Pig",
-    breed: "Mastif",
-    age: 10
-  }
-]
+    [
+      {
+        name: "Chompers",
+        breed: "Pug",
+        age: 7
+      },
+      {
+        name: "Freddy",
+        breed: "Lab",
+        age: 4
+      },
+      {
+        name: "Mr. Pig",
+        breed: "Mastif",
+        age: 10
+      }
+    ]
 
-Example output
+#### Example output:
 
-[
-  {
-    name: "Chompers",
-    breed: "Pug",
-    age: 8
-  },
-  
-  {
-    name: "Freddy",
-    breed: "Lab",
-    age: 5
-  },
-  
-  {
-    name: "Mr. Pig",
-    breed: "Mastiff",
-    age: 11
-  }
-]
+    [
+      {
+        name: "Chompers",
+        breed: "Pug",
+        age: 8
+      },
+      
+      {
+        name: "Freddy",
+        breed: "Lab",
+        age: 5
+      },
+      
+      {
+        name: "Mr. Pig",
+        breed: "Mastiff",
+        age: 11
+      }
+    ]
 
 # POD ASSESSMENT 2
 
@@ -276,7 +266,7 @@ Example output
 ### 1. Key Pressed Counter
 
 ----
-Exercise in progress by: 
+Exercise in progress by: Andrew
 
 ----
 
@@ -293,7 +283,7 @@ placed in the objects-exercises.js folder
 
 ----
 
-Create a function, makeSandwhichObjects() that takes in two array of strings, breads and fillings and returns an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
+Create a function, `makeSandwhichObjects()` that takes in two array of strings, breads and fillings and returns an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
 
 Source: https://java.codeup.com/extra-exercises/javascript/arrays-and-objects/
 
@@ -318,7 +308,12 @@ Exercise in progress by:
 
 ----
 
-Create an animated icon on a mapbox map. Add your animation to three different locations on your map. Can you generate different icons for each?
+1. Create an animated icon on a mapbox map.
+
+2. Add your animation to three different locations on your map.
+
+#### Bonuses
+> Can you generate different icons for each?
 
 ### 2. Responsive Progress Bar
 
@@ -327,48 +322,91 @@ Exercise in progress by:
 
 ----
 
-Generate a progress bar that is responsive to buttons with preset values. Each button pushed should change the progress bar.
+Generate a progress bar that is responsive to buttons with preset values.
+* Each button pushed should change the progress bar.
 
 ### 3. Make Breakout
 
 ----
-Exercise in progress by: 
+Exercise in progress by: Andrew
 
 ----
 
 MDN has a tutorial for making breakout. It seems fairly step by step and might be fun. Let me know what you think.
 
-https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
+Source: https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
 
 
 ## Chris' Provided Exercises
 
 ###  1. The Book List
 
+1. Create a webpage with an `h1` of `"My Book List"`.
 
-Create a webpage with an h1 of "My Book List".
-Add a script tag to the bottom of the page, where all your JS will go.
-Copy this array of books:
-    var books = [
-      {
-        title: 'The Design of EveryDay Things',
-        author: 'Don Norman',
-        alreadyRead: false
-      }, {
-        title: 'The Most Human Human',
-        author: 'Brian Christian',
-        alreadyRead: true
-      }
-    ];
+2. Add a script tag to the bottom of the page, where all your JS will go.
+
+3. Copy this array of books:
+
+    ``` javascript
+        var books = [
+          {
+            title: 'The Design of EveryDay Things',
+            author: 'Don Norman',
+            alreadyRead: false
+          }, {
+            title: 'The Most Human Human',
+            author: 'Brian Christian',
+            alreadyRead: true
+          }
+        ];
+    ```
   
-Iterate through the array of books. For each book, create a p element with the book title and author and append it to the page.
-Bonuses:
-Use a ul and li to display the books.
-Add an img to each book that links to a URL of the book cover.
-Change the style of the book depending on whether you have read it or not.
+4. Iterate through the array of books. 
+
+5. For each book, create a `p` element with the book title and author and append it to the page.
+
+#### Bonuses:
+
+1. Use a `ul` and `li` to display the books.
+
+2. Add an `img` to each book that links to a URL of the book cover.
+
+3. Change the style of the book depending on whether you have read it or not.
 
 ### 2. About Me
 
+Andrew
+
+1. Start with this HTML and save it as `about_me.html`
+
+    ```html
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8"/>
+          <title>About Me</title>
+        </head>
+        <body>
+          <h1>About Me</h1>
+    
+          <ul>
+            <li>Nickname: <span id="nickname"></span>
+            <li>Favorites:  <span id="favorites"></span>
+            <li>Hometown: <span id="hometown"></span>
+          </ul>
+        </body>
+      </html>
+    ```
+
+2. Add a script tag to the bottom of the HTML body.
+
+3. `(In the JavaScript)` Change the body tag's style so it has a `font-family` of `"Arial, sans-serif"`.
+
+4. `(In the JavaScript)` Replace each of the `spans` (nickname, favorites, hometown) with your own information.
+
+5. Iterate through each `li` and change the `class` to `"list-item"`.
+
+6. `(In the HTML head)` Add a style tag that sets a rule for `.list-item` to make the color red.
 
 Start with this HTML and save it as "about_me.html":
   <!DOCTYPE html>
@@ -405,3 +443,6 @@ Inside of the function, create an array of strings where each string is a quote 
 getRandomQuote should generate a random number between 0 and the array's length minus 1
 use the randomly generated number as your index
 return a random quote.
+
+7. Create a new `img` element and set its `src` attribute to a picture of you. Append that element to the page.
+

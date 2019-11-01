@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>About Me</title>
+    <style>
+        .list-items {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>About Me</h1>
+
+<ul>
+    <li>Nickname: <span id="nickname"></span>
+    <li>Favorites:  <span id="favorites"></span>
+    <li>Hometown: <span id="hometown"></span>
+</ul>
+
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    $(document).ready(function(){
+        $('body').css("font-family", "Arial, sans-serif").append('<img src="img/backfly.jpg" alt="">');
+        $("#nickname").text("NaNdrew");
+        $("#favorites").text("My family, Jacob, food");
+        $("#hometown").text("San Diego");
+        $("li").click(function (){
+            $(this).toggleClass("list-items")
+        });
+    });
+</script>
+</body>
+</html>

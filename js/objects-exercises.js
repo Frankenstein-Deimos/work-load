@@ -124,6 +124,20 @@ for (var i = 0; i < people.length; i++) {
 // ======================
 // Create a function, makeSandwhichObjects() that takes in two array of strings, breads and fillings and returns an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
 
+var breads  = [
+    "white",
+    "wheat",
+    "rhy",
+    "white"
+];
+
+var fillings = [
+    "pb&j",
+    "ham",
+    "cheese steak",
+    "tuna"
+];
+
 function makeSandwichObject(breads, fillings) {
     var arr = [];
     for (var i = 0; i < breads.length; i++) {
@@ -138,3 +152,13 @@ function makeSandwichObject(breads, fillings) {
 }
 console.log(makeSandwichObject(breads,fillings));
 
+//=========================
+
+// Write a function named getRandomQuote().
+
+var quotes = ["who knows best?, me!", "if it don't make dollars, it don't make sense", "who loves orange soda?, kel loves orange soda"];
+function getRandomQuote(arr){
+    return quotes.splice(Math.floor(Math.random() * quotes.length), 1);
+}
+
+console.log(getRandomQuote(quotes));

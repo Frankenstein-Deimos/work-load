@@ -444,5 +444,3 @@ getRandomQuote should generate a random number between 0 and the array's length 
 use the randomly generated number as your index
 return a random quote.
 
-7. Create a new `img` element and set its `src` attribute to a picture of you. Append that element to the page.
-

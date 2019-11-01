@@ -287,7 +287,9 @@ Source: https://java.codeup.com/extra-exercises/javascript/dom-events/
 ### 2. A Pile of Sandwiches
 
 ----
-Exercise in progress by: 
+Exercise in progress by: Chris
+
+placed in the objects-exercises.js folder
 
 ----
 
@@ -393,6 +395,11 @@ Iterate through each li and change the class to "list-item".
 Create a new img element and set its src attribute to a picture of you. Append that element to the page.
 
 ## 3. Write a function named getRandomQuote().
+
+------
+Exercise in progress by: Chris
+
+Placed in the objects-exercises.js folder
 
 Inside of the function, create an array of strings where each string is a quote or thought you find inspirational
 getRandomQuote should generate a random number between 0 and the array's length minus 1

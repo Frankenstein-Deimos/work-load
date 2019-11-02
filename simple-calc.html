@@ -9,31 +9,33 @@
 <body>
 
 <section id="simple-calc-container" class="calc-container">
+    <!-- CALC DISPLAY (index: 0) -->
     <div id="calc-display" class="calc-display"></div>
-    <div id="clear-button" class="clear-button shape">AC</div>
-    <div id="pos-neg-button" class="pos-neg-button shape">
-        <span><sup>+</sup>/<sub>-</sub></span>
-    </div>
-    <div id="percent-button" class="percent-button shape">%</div>
-    <div id="division-button" class="division-button shape">/</div>
-    <div id="multiplication-button" class="multiplication-button shape">*</div>
-    <div id="subtraction-button" class="subtraction-button shape">-</div>
-    <div id="addition-button" class="addition-button shape">+</div>
-    <div id="equal-button" class="equal-button shape">=</div>
-    <div id="one-button" class="one-button shape">1</div>
-    <div id="two-button" class="two-button shape">2</div>
-    <div id="three-button" class="three-button shape">3</div>
-    <div id="four-button" class="four-button shape">4</div>
-    <div id="five-button" class="five-button shape">5</div>
-    <div id="six-button" class="six-button shape">6</div>
-    <div id="seven-button" class="seven-button shape">7</div>
-    <div id="eight-button" class="eight-button shape">8</div>
-    <div id="nine-button" class="nine-button shape">9</div>
-    <div id="zero-button" class="zero-button shape">0</div>
-    <div id="dot-button" class="dot-button shape">.</div>
-
+    <!-- DATA BUTTONS (index: 1-3) -->
+    <div id="clear-button" class="clear-button">AC</div>
+    <div id="pos-neg-button" class="pos-neg-button"><span><sup>+</sup>/<sub>-</sub></span></div>
+    <div id="percent-button" class="percent-button">%</div>
+    <!-- OPERATOR BUTTONS (index: 4-8)-->
+    <div id="division-button" class="division-button">/</div>
+    <div id="multiplication-button" class="multiplication-button">*</div>
+    <div id="subtraction-button" class="subtraction-button">-</div>
+    <div id="addition-button" class="addition-button">+</div>
+    <div id="equal-button" class="equal-button">=</div>
+    <!-- NUMBER BUTTONS (index: 9-19) -->
+    <div id="one-button" class="one-button">1</div>
+    <div id="two-button" class="two-button">2</div>
+    <div id="three-button" class="three-button">3</div>
+    <div id="four-button" class="four-button">4</div>
+    <div id="five-button" class="five-button">5</div>
+    <div id="six-button" class="six-button">6</div>
+    <div id="seven-button" class="seven-button">7</div>
+    <div id="eight-button" class="eight-button">8</div>
+    <div id="nine-button" class="nine-button">9</div>
+    <div id="zero-button" class="zero-button">0</div>
+    <div id="dot-button" class="dot-button">.</div>
 </section>
-
+<!-- JQUERY -->
+<script src="js/jquery-2.2.4.js"></script>
 <!-- CUSTOM JS -->
 <script src="js/simple-calc.js"></script>
 </body>

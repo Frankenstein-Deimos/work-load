@@ -1,69 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+}
+
+/* ===== CALCULATOR CONTAINER ===== */
 .calc-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
-    width: 15em;
-    height: 20em;
-    border: 1px solid red;
+    grid-gap: 5px;
+    width: 16em;
+    height: auto;
+    background-color: black;
+    border-radius: 1em;
+    margin: 0 auto;
 }
 
+/* ===== BUTTON SET LOCATION/PLACEMENT ===== */
 .calc-display {
     grid-area: 1 / 1 / 2 / 5;
 }
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.pos-neg-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.percent-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.division-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
-/*.clear-button {*/
-/*    grid-area:;*/
-/*}*/
+
+.clear-button {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.pos-neg-button {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.percent-button {
+    grid-area: 2/ 3 / 3 / 4;
+}
+
+.division-button {
+    grid-area: 2/ 4 / 3 / 5;
+}
+
+.multiplication-button {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+.subtraction-button {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.addition-button {
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+.equal-button {
+    grid-area: 6/ 4 / 7 / 5;
+}
+
+.zero-button {
+    grid-area: 6 / 1 / 7 / 3;
+}
+
+.one-button {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.two-button {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.three-button {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.four-button {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.five-button {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.six-button {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.seven-button {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.eight-button {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.nine-button {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+/* --- MARGINS --- */
+.m-left {
+    margin-left: 5px;
+}
+
+.m-right {
+    margin-right: 5px;
+}
+
+.m-bottom {
+    margin-bottom: 5px;
+}
+
+.m-top {
+    margin-top: 5px;
+}
+
+/* ===== STYLE PROPERTIES ===== */
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+}
+
+/* ===== BACKGROUND COLORS ===== */
+.operators {
+    background-color: #FD9600;
+}
+
+.data-operators {
+    background-color: #A7A6A7;
+}
+
+.number-operators {
+    background-color: #333333;
+}
+
+/* ===== SPECIFIC BUTTONS ===== */
+.calc-display {
+    height: 7em;
+    background-color: rgba(167, 166, 167, 0.7);
+    border-radius: 1em;
+}
+
+.zero-button {
+    border-radius: 2em;
+}
+
+.white {
+    color: white;
+}

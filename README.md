@@ -446,3 +446,31 @@ getRandomQuote should generate a random number between 0 and the array's length 
 use the randomly generated number as your index
 return a random quote.
 
+
+# POD ASSESSMENT 3
+
+## Chris' Provided Exercises
+
+## 1. Filter out Strings from an Array
+
+Create a function that takes an array of non-negative numbers and strings and return a new array without the strings.
+Examples
+
+filterArray([1, 2, "a", "b"]) ➞ [1, 2]
+filterArray([1, "a", "b", 0, 15]) ➞ [1, 0, 15]
+filterArray([1, 2, "aasf", "1", "123", 123]) ➞ [1, 2, 123]
+
+## 2. Without Ten
+
+Return a version of the given array where all the 10's have been removed. The remaining elements should shift left towards the start of the array as needed, and the empty spaces a the end of the array should be 0. So {1, 10, 10, 2} yields {1, 2, 0, 0}. You may modify and return the given array or make a new array.
+Examples
+*         withoutTen([1, 10, 10, 2]) → 1,2,0,0
+*         withoutTen([10, 2, 10]) → 2,0,0
+*         withoutTen([1, 99, 10]) → 1,99,0
+
+## 3. Add up the numbers from a single number
+
+In progress by Chris: Placed and labeled in the objects-exercises.js folder
+
+Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+

@@ -162,3 +162,14 @@ function getRandomQuote(arr){
 }
 
 console.log(getRandomQuote(quotes));
+
+//================ Chris exercise #3 for week 3==============
+
+function addUp(num) {
+
+    var total = 0;
+    for (var i = 1; i <= num; i++) {
+        total = total + i;
+    }
+    return total;
+}

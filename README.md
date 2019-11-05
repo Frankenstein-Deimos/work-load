@@ -9,13 +9,13 @@ Below is a designated list separated by each individual. Below each numbered exe
 ### 1. Memory Card Game
 
 ----
-Exercise done by: Chris
+Exercise: Done by Chris
 
 ----
 
 > "Concentration, also known as Memory, Pelmanism, Shinkei-suijaku, Pexeso or Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn."
 
-http://en.wikipedia.org/wiki/Concentration_(game)
+Source: http://en.wikipedia.org/wiki/Concentration_(game)
 
 The objective of the game is to turn over pairs of matching cards until all cards are matched.
 
@@ -38,7 +38,7 @@ Source: https://java.codeup.com/appendix/extra-challenges/memory-game/
 ### 2. Whack-A-Mole Game
 
 ----
-Exercise done by: Miguel
+Exercise: Done by Miguel
 
 ----
 
@@ -69,7 +69,7 @@ Source: https://java.codeup.com/jquery/whack-a-mole/create-game/
 ### 3. Change Text Style - external source
 
 ----
-Exercise done by: Andrew
+Exercise: Done by Andrew
 
 ----
 
@@ -82,19 +82,18 @@ Source: https://www.w3resource.com/javascript-exercises/javascript-dom-exercises
 ### 1. Create a function that returns the number of hashes and pluses in a string.
 
 ----
-Exercise done by: Miguel
+Exercise: Done by Miguel
 
 ----
 
 #### Examples:
 
-`hashPlusCount("###+")` ➞ `[3, 1]`
-
-`hashPlusCount("##+++#")` ➞ `[3, 3]`
-
-`hashPlusCount("#+++#+#++#")` ➞ `[4, 6]`
-
-`hashPlusCount("")` ➞ `[0, 0]`
+```
+hashPlusCount("###+") ➞ [3, 1]
+hashPlusCount("##+++#") ➞ [3, 3]
+hashPlusCount("#+++#+#++#") ➞ [4, 6]
+hashPlusCount("") ➞ [0, 0]
+```
 
 Source: https://edabit.com/challenge/ydBcGvv3n447nbxCy
 
@@ -104,33 +103,33 @@ Source: https://edabit.com/challenge/ydBcGvv3n447nbxCy
 Exercise done by: Chris
 
 ----
-    *
-    * *
-    * * *
-    * * * *
-    * * * * *
-
+```
+*
+* *
+* * *
+* * * *
+* * * * *
+```
 Source: https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
 
 
 ### 3. Create a function that takes a string as an argument and converts the first character of each word to uppercase. Return the newly formatted string.
 
 ----
-Exercise done by: Andrew
+Exercise: Done by Andrew
 
 ----
 
 #### Examples:
 
-`makeTitle("This is a title")` ➞ `"This Is A Title"`
+```
+makeTitle("This is a title") ➞ "This Is A Title"
+makeTitle("capitalize every word") ➞ "Capitalize Every Word"
+makeTitle("I Like Pizza") ➞ "I Like Pizza"
+makeTitle("PIZZA PIZZA PIZZA") ➞ "PIZZA PIZZA PIZZA"
+```
 
-`makeTitle("capitalize every word")` ➞ `"Capitalize Every Word"`
-
-`makeTitle("I Like Pizza")` ➞ `"I Like Pizza"`
-
-`makeTitle("PIZZA PIZZA PIZZA")` ➞ `"PIZZA PIZZA PIZZA"`
-
-source https://edabit.com/challenge/LvtsCQNpx7CwHGubf
+Source https://edabit.com/challenge/LvtsCQNpx7CwHGubf
 
 ## Objects
 
@@ -190,7 +189,7 @@ Exercise done by: Andrew
 ### 2. External source exercise 
 
 ----
-Exercise done by: Miguel
+Exercise: Done by Miguel
 
 ----
     var people = ["Greg", "Mary", "Devon", "James"];
@@ -213,7 +212,7 @@ Source: https://www.rithmschool.com/courses/javascript/javascript-arrays-exercis
 ### 3. Write a function, getOlder() that takes in array of dog objects and increases the value of each object's age property by 1.
 
 ----
-Exercise done by: Chris
+Exercise: Done by Chris
 
 ----
 
@@ -266,7 +265,7 @@ Exercise done by: Chris
 ### 1. Key Pressed Counter
 
 ----
-Exercise in progress by: Andrew
+Exercise: In progress by Andrew
 
 ----
 
@@ -277,24 +276,24 @@ Source: https://java.codeup.com/extra-exercises/javascript/dom-events/
 ### 2. A Pile of Sandwiches
 
 ----
-Exercise in progress by: Chris
+Exercise: In progress by Chris
 
 placed in the objects-exercises.js folder
 
 ----
 
-Create a function, `makeSandwhichObjects()` that takes in two array of strings, breads and fillings and returns an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
+Create a `function`, `makeSandwhichObjects()` that takes in two array of strings, breads and fillings and `returns` an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
 
 Source: https://java.codeup.com/extra-exercises/javascript/arrays-and-objects/
 
 ### 3. Simple Calculator
 
 ----
-Exercise in progress by: Miguel
+Exercise: In progress by Miguel
 
 ----
 
-Create a simple calculator using javascript
+Create a simple calculator using `JavaScript`
 
 Source: https://java.codeup.com/javascript-i/bom-and-dom/calculator/
 
@@ -304,7 +303,7 @@ Source: https://java.codeup.com/javascript-i/bom-and-dom/calculator/
 ### 1. Animated Icon
 
 ----
-Exercise in progress by: 
+Exercise: In progress by
 
 ----
 
@@ -318,7 +317,7 @@ Exercise in progress by:
 ### 2. Responsive Progress Bar
 
 ----
-Exercise in progress by: 
+Exercise: In progress by Miguel
 
 ----
 
@@ -328,7 +327,7 @@ Generate a progress bar that is responsive to buttons with preset values.
 ### 3. Make Breakout
 
 ----
-Exercise in progress by: Andrew
+Exercises: In progress by Andrew
 
 ----
 
@@ -336,12 +335,14 @@ Fade in and fade out all division elements.
 
 https://www.w3resource.com/jquery-exercises/jquery-effects-exercises.php
 
-
-
-
 ## Chris' Provided Exercises
 
 ###  1. The Book List
+
+----
+Exercise: Done by Miguel
+
+----
 
 1. Create a webpage with an `h1` of `"My Book List"`.
 
@@ -377,7 +378,10 @@ https://www.w3resource.com/jquery-exercises/jquery-effects-exercises.php
 
 ### 2. About Me
 
-Andrew
+----
+Exercise: Done by Andrew
+
+----
 
 1. Start with this HTML and save it as `about_me.html`
 
@@ -410,88 +414,148 @@ Andrew
 
 6. `(In the HTML head)` Add a style tag that sets a rule for `.list-item` to make the color red.
 
-Start with this HTML and save it as "about_me.html":
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8"/>
-      <title>About Me</title>
-    </head>
-    <body>
-      <h1>About Me</h1>
+7. Create a new `img` element and set its `src` attribute to a picture of you.
+Append that element to the page.
 
-      <ul>
-        <li>Nickname: <span id="nickname"></span>
-        <li>Favorites:  <span id="favorites"></span>
-        <li>Hometown: <span id="hometown"></span>
-      </ul>
-    </body>
-  </html>
-Add a script tag to the bottom of the HTML body.
-(In the JavaScript) Change the body tag's style so it has a font-family of "Arial, sans-serif".
-(In the JavaScript) Replace each of the spans (nickname, favorites, hometown) with your own information.
-Iterate through each li and change the class to "list-item".
-(In the HTML head) Add a style tag that sets a rule for .list-item to make the color red.
-Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+### 3. Write a function named getRandomQuote().
 
-## 3. Write a function named getRandomQuote().
-
-------
+----
 Exercise in progress by: Chris
 
 Placed in the objects-exercises.js folder
 
-Inside of the function, create an array of strings where each string is a quote or thought you find inspirational
-getRandomQuote should generate a random number between 0 and the array's length minus 1
-use the randomly generated number as your index
-return a random quote.
+----
+
+1. Inside of the function named `getRandomQuote`, create an array of strings where each string is a quote or thought you find inspirational.
+2. `getRandomQuote` should generate a random number between `0` and the `array's length minus 1`
+3. Use the randomly generated number as your index
+4. `return` a random quote.
 
 
 # POD ASSESSMENT 3
 
 ## Chris' Provided Exercises
 
-## 1. Filter out Strings from an Array
+### 1. Filter out Strings from an Array
 
-In progress by Andrew
+--- 
+Exercise: In progress by Andrew
 
-Create a function that takes an array of non-negative numbers and strings and return a new array without the strings.
-Examples
+---
 
+Create a `function` that takes an `array` of non-negative numbers and strings and `return` a `new array` without the strings.
+
+#### Examples:
+
+```
 filterArray([1, 2, "a", "b"]) ➞ [1, 2]
 filterArray([1, "a", "b", 0, 15]) ➞ [1, 0, 15]
 filterArray([1, 2, "aasf", "1", "123", 123]) ➞ [1, 2, 123]
+```
 
-## 2. Without Ten
+### 2. Without Ten
 
-Return a version of the given array where all the 10's have been removed. The remaining elements should shift left towards the start of the array as needed, and the empty spaces a the end of the array should be 0. So {1, 10, 10, 2} yields {1, 2, 0, 0}. You may modify and return the given array or make a new array.
-Examples
-*         withoutTen([1, 10, 10, 2]) → 1,2,0,0
-*         withoutTen([10, 2, 10]) → 2,0,0
-*         withoutTen([1, 99, 10]) → 1,99,0
+--- 
+Exercise: Done by
 
-## 3. Add up the numbers from a single number
+---
 
-In progress by Chris: Placed and labeled in the objects-exercises.js folder
+1. `return` a version of the given `array` where all the `10's` have been removed. 
+2. The remaining elements should `shift` left towards the start of the `array` as needed, and the empty spaces at the end of the array should be 0.
+3. So `{1, 10, 10, 2}` yields `{1, 2, 0, 0}`. 
+- You may modify and `return` the given `array` or make a `new array`.
 
-Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+#### Examples:
+
+```
+withoutTen([1, 10, 10, 2]) → 1,2,0,0
+withoutTen([10, 2, 10]) → 2,0,0
+withoutTen([1, 99, 10]) → 1,99,0
+```
+
+### 3. Add up the numbers from a single number
+
+--- 
+Exercise: In progress by Chris 
+
+Placed and labeled in the objects-exercises.js folder
+
+---
+
+1. Create a `function` that takes a number as an argument.
+2. Add up all the numbers from `1` to the number you passed to the `function`.
+3. For example, if the input is `4` then your `function` should return `10` because `1 + 2 + 3 + 4 = 10`.
 
 ## Andrew's Provided Exercises
 
-## 1. DOM table manipulation
-Write a JavaScript function that accept row, column, (to identify a particular cell) and a string to update the content of that cell.
+### 1. DOM table manipulation
 
-https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
+--- 
+Exercise: Done by
 
-## 2. Class bonus to Jquery Effects
+---
 
-In progress by Andrew
+Write a JavaScript `function` that accept row, column, (to identify a particular cell) and a string to update the content of that cell.
 
-Use a bootstrap modal for the message that fades in after 8 seconds. You may find that you can use bootstrap's modal methods to achieve the fading effect.
+Source: https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
 
-## 3. DOM table manipulation from user
-Write a JavaScript function that creates a table, accept row, column numbers from the user, and input row-column number as content (e.g. Row-0 Column-0) of a cell.
+### 2. Class bonus to jQuery Effects
 
-https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
+--- 
+Exercise: In progress by Andrew
 
+---
 
+Use a `bootstrap modal` for the message that fades in after `8` seconds. You may find that you can use bootstrap's modal methods to achieve the fading effect.
+
+### 3. DOM table manipulation from user
+
+--- 
+Exercise: Done by
+
+---
+
+Write a JavaScript `function` that creates a table, accept row, column numbers from the user, and input row-column number as content (e.g. Row-0 Column-0) of a cell.
+
+Source: https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
+
+## Miguel's Provided Exercises
+
+### 1. Bonus #1 from jQuery Effects
+
+---
+Exercise: Done by Miguel
+
+---
+
+Use a `bootstrap alert` for the dismissible message that shows on page load.
+
+### 2. Convert Objects to Arrays
+
+--- 
+Exercise: Done by
+
+---
+
+Write a `function` that converts an `object` into an `array`, where each element represents a key-value pair.
+
+```
+toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
+toArray({ shrimp: 15, tots: 12 }) ➞ [["shrimp", 15], ["tots", 12]]
+toArray({}) ➞ []
+```
+
+### 3. Seven Boom!
+
+---
+Exercise: Done by
+
+---
+
+Create a `function` that takes an array of numbers and `return` "Boom!" if the number `7` appears in the array. Otherwise, `return` "there is no 7 in the array".
+
+```
+sevenBoom([1, 2, 3, 4, 5, 6, 7]) ➞ "Boom!"
+sevenBoom([8, 6, 33, 100]) ➞ "there is no 7 in the array"
+sevenBoom([2, 55, 60, 97, 86]) ➞ "Boom!"
+```

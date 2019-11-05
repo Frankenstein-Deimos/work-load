@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Create a function that takes an array of non-negative numbers and strings and return a new array without the strings.
+    Examples</p>
+
+<script>
+    function myFilter (arr) {
+        var bucket = [];
+        arr.forEach(function (element){
+            if (typeof(parseFloat(element)) === "number" && !isNaN(parseFloat(element))) {
+                bucket.push(element);
+            }
+        });
+        return bucket;
+    }
+
+    console.log(myFilter([1, 2, "a", "b"]))
+</script>
+
+</body>
+</html>

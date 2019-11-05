@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM table manipulation from user</title>
+</head>
+<body>
+<table id="myTable" border="5">
+</table>
+<form>
+    <input type="button" onclick="createTable()" value="Create the table">
+</form>
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    function createTable()
+    {
+      var  rn = window.prompt("Input number of rows", 1);
+      var  cn = window.prompt("Input number of columns",1);
+
+        for(var r=0;r<parseInt(rn);r++)
+        {
+            var x=document.getElementById('myTable').insertRow(r);
+            for(var c=0;c<parseInt(cn);c++)
+            {
+                var y=  x.insertCell(c);
+                y.innerHTML="Row-"+r+" Column-"+c;
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

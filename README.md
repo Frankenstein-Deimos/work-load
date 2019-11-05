@@ -453,6 +453,8 @@ return a random quote.
 
 ## 1. Filter out Strings from an Array
 
+In progress by Andrew
+
 Create a function that takes an array of non-negative numbers and strings and return a new array without the strings.
 Examples
 
@@ -473,4 +475,23 @@ Examples
 In progress by Chris: Placed and labeled in the objects-exercises.js folder
 
 Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+## Andrew's Provided Exercises
+
+## 1. DOM table manipulation
+Write a JavaScript function that accept row, column, (to identify a particular cell) and a string to update the content of that cell.
+
+https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
+
+## 2. Class bonus to Jquery Effects
+
+In progress by Andrew
+
+Use a bootstrap modal for the message that fades in after 8 seconds. You may find that you can use bootstrap's modal methods to achieve the fading effect.
+
+## 3. DOM table manipulation from user
+Write a JavaScript function that creates a table, accept row, column numbers from the user, and input row-column number as content (e.g. Row-0 Column-0) of a cell.
+
+https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php
+
 

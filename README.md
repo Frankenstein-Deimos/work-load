@@ -534,7 +534,7 @@ Use a `bootstrap alert` for the dismissible message that shows on page load.
 ### 2. Convert Objects to Arrays
 
 --- 
-Exercise: Done by
+Exercise: Done by Chris
 
 ---
 
@@ -549,7 +549,7 @@ toArray({}) ➞ []
 ### 3. Seven Boom!
 
 ---
-Exercise: Done by
+Exercise: Done by Andrew
 
 ---
 

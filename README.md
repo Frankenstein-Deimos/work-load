@@ -491,9 +491,10 @@ Placed and labeled in the objects-exercises.js folder
 ### 1. DOM table manipulation
 
 --- 
-Exercise: Done by
+Exercise: Done by Chris
 
 ---
+
 
 Write a JavaScript `function` that accept row, column, (to identify a particular cell) and a string to update the content of that cell.
 

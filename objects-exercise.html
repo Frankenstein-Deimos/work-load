@@ -7,5 +7,17 @@
 <body>
 <h1>Objects Exercise</h1>
 <script src="js/objects-exercises.js"></script>
+<script>
+    // Write a `function` that converts an `object` into an `array`, where each element represents a key-value pair.
+    var toArray = ({ a: 1, b: 2 });
+    // toArray({ shrimp: 15, tots: 12 }) ➞ [["shrimp", 15], ["tots", 12]]
+    // toArray({}) ➞ []
+
+    var result = Object.keys(toArray).map(function(key) {
+        return [String(key), Number(key), toArray[key]];
+    });
+
+    console.log(result);
+</script>
 </body>
 </html>

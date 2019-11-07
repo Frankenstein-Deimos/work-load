@@ -9,12 +9,13 @@
 <script src="js/objects-exercises.js"></script>
 <script>
     // Write a `function` that converts an `object` into an `array`, where each element represents a key-value pair.
-    var toArray = ({ a: 1, b: 2 });
+    var toArray = ({ shrimp: 15, tots: 12 });
+    console.log(toArray);
     // toArray({ shrimp: 15, tots: 12 }) ➞ [["shrimp", 15], ["tots", 12]]
     // toArray({}) ➞ []
 
     var result = Object.keys(toArray).map(function(key) {
-        return [String(key), Number(key), toArray[key]];
+        return [String(key), toArray[key]];
     });
 
     console.log(result);

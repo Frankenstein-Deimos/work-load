@@ -18,7 +18,7 @@ var dogs = [
         age: 2
     }
 ];
-console.log(dogs);
+// console.log(dogs);
 
 function getOlder(arr,index){
     dogs.forEach(function (dog,index) {
@@ -48,7 +48,7 @@ function getOlder(arr,index){
             year: 2007,
             isDirty: true
         }
-    ]
+    ];
 // Example output
 //
 //     [
@@ -80,7 +80,7 @@ function changeToFalse (carArray) {
     return carArray;
 }
 
-console.log(changeToFalse(cars));
+// console.log(changeToFalse(cars));
 // ___________________________________
 //
 // https://www.rithmschool.com/courses/javascript/javascript-arrays-exercise
@@ -95,31 +95,31 @@ console.log(changeToFalse(cars));
 //     ____________________________________
 
 // ==== COMPLETED BY MIGUEL ====
-
-var people = ["Greg", "Mary", "Devon", "James"];
-
-people.forEach(function(person) {
-    console.log(person);
-});
-// Remove the first item in the array
-people.shift();
-console.log(people);
-// Remove the last item in the array
-people.pop();
-console.log(people);
-// Add an item to the beginning of the array
-people.unshift("Matt");
-console.log(people);
-// Add an item to the end of the array
-people.push("Miguel");
-console.log(people);
-for (var i = 0; i < people.length; i++) {
-    if (people[i] === "Mary") {
-        console.log(people[i]);
-        break;
-    }
-    console.log(people[i]);
-}
+//
+// var people = ["Greg", "Mary", "Devon", "James"];
+//
+// people.forEach(function(person) {
+//     console.log(person);
+// });
+// // Remove the first item in the array
+// people.shift();
+// console.log(people);
+// // Remove the last item in the array
+// people.pop();
+// console.log(people);
+// // Add an item to the beginning of the array
+// people.unshift("Matt");
+// console.log(people);
+// // Add an item to the end of the array
+// people.push("Miguel");
+// console.log(people);
+// for (var i = 0; i < people.length; i++) {
+//     if (people[i] === "Mary") {
+//         console.log(people[i]);
+//         break;
+//     }
+//     console.log(people[i]);
+// }
 
 // ======================
 // Create a function, makeSandwhichObjects() that takes in two array of strings, breads and fillings and returns an array of sandwhichObjects that contain properties for bread and filling and values correspond to the same order of the two passed in arrays. Assume the two array inputs are the same length.
@@ -150,7 +150,7 @@ function makeSandwichObject(breads, fillings) {
     });
     return arr;
 }
-console.log(makeSandwichObject(breads,fillings));
+// console.log(makeSandwichObject(breads,fillings));
 
 //=========================
 
@@ -161,7 +161,7 @@ function getRandomQuote(arr){
     return quotes.splice(Math.floor(Math.random() * quotes.length), 1);
 }
 
-console.log(getRandomQuote(quotes));
+// console.log(getRandomQuote(quotes));
 
 //================ Chris exercise #3 for week 3==============
 

@@ -79,13 +79,14 @@
     cellButton.click(function () {
         var row = prompt("Select a row number.");
 
-        if (parseInt(row) > rowNumber || parseInt(row) < 0) {
+        while (isNaN(parseInt(row)) || parseInt(row) > rowNumber || parseInt(row) < 0) {
             alert("Cannot retrieve row number");
             row = prompt("Select a row number.");
         }
 
         var column = prompt("Select a column number.");
-        if (parseInt(column) > columnNumber || parseInt(column) < 0) {
+
+        while (isNaN(parseInt(column)) || parseInt(column) > columnNumber || parseInt(column) < 0) {
             alert("Cannot retrieve column number");
             column = prompt("Select a column number.");
         }

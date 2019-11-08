@@ -456,7 +456,7 @@ filterArray([1, 2, "aasf", "1", "123", 123]) ➞ [1, 2, 123]
 ### 2. Without Ten
 
 --- 
-Exercise: Done by
+Exercise: Done by Miguel
 
 ---
 
@@ -512,7 +512,9 @@ Use a `bootstrap modal` for the message that fades in after `8` seconds. You may
 ### 3. DOM table manipulation from user
 
 --- 
-Exercise: Done by
+Exercise: Done by Miguel
+
+Added cell selector also (not complete)
 
 ---
 

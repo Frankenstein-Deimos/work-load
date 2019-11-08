@@ -66,8 +66,11 @@
         tRows().each(function (index) {
             // Selects each individual row's children
             $(this).children("td").prepend("Row-" + (index + 1));
+            $(this).children("td").attr("id","Row-"+(index+1));
+            // Selects each individual column data from individual row above
             $(this).children("td").each(function (index) {
                 $(this).append("Column-" + (index + 1));
+                $(this).attr("id", $(this).attr("id") + "Column-" + (index + 1));
             })
         });
         cellButton.show();
@@ -92,7 +95,7 @@
         if (row === "" && column !== "") {
 
             tRows().children("td").each(function () {
-                var test = $(this).html().toLowerCase();
+                var test = $(this).attr("id").toLowerCase();
                 var columnSelected = "column-" + column;
                 if (test.indexOf(columnSelected) >= 0) {
                     $(this).html(content);
@@ -101,15 +104,15 @@
             })
         } else if (column === "" && row !== "") {
             tRows().children("td").each(function () {
-                var test = $(this).html().toLowerCase();
+                var test = $(this).attr("id").toLowerCase();
                 var rowSelected = "row-" + row;
                 if (test.indexOf(rowSelected) >= 0) {
                     $(this).html(content);
                 }
             })
-        } else {
+        } else  if (column !== "" && row !== "") {
             tRows().children("td").each(function () {
-                var test = $(this).html().toLowerCase();
+                var test = $(this).attr("id").toLowerCase();
                 var rowSelected = "row-" + row;
                 var columnSelected = "column-" + column;
                 var product = rowSelected + columnSelected;
@@ -117,6 +120,10 @@
                     $(this).html(content);
                 }
             })
+        } else {
+            tRows().children("td").each(function () {
+                $(this).html(content);
+            });
         }
     });
 

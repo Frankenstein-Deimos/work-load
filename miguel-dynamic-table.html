@@ -26,6 +26,8 @@
     var tRows = function () {
         return $("#table tbody tr");
     };
+    var rowNumber;
+    var columnNumber;
 
     table.hide();
     cellButton.hide();
@@ -49,7 +51,9 @@
             return $("body").prepend("<h1>Number of rows cannot be 0</h1>");
         } else {
             numberRows = parseFloat(numberRows);
+            rowNumber = numberRows;
             numberColumns = parseFloat(numberColumns);
+            columnNumber = numberColumns;
         }
 
         $("h1").html("");
@@ -60,6 +64,7 @@
         }
 
         tRows().each(function (index) {
+            // Selects each individual row's children
             $(this).children("td").prepend("Row-" + (index + 1));
             $(this).children("td").each(function (index) {
                 $(this).append("Column-" + (index + 1));
@@ -70,13 +75,48 @@
 
     cellButton.click(function () {
         var row = prompt("Select a row number.");
-        var column = prompt("Select a column number.");
-        var content = prompt("Enter updated content");
 
-        // if (parseInt(row) > )
+        if (parseInt(row) > rowNumber || parseInt(row) < 0) {
+            alert("Cannot retrieve row number");
+            row = prompt("Select a row number.");
+        }
+
+        var column = prompt("Select a column number.");
+        if (parseInt(column) > columnNumber || parseInt(column) < 0) {
+            alert("Cannot retrieve column number");
+            column = prompt("Select a column number.");
+        }
+
+        var content = prompt("Enter updated content");
 
         if (row === "" && column !== "") {
 
+            tRows().children("td").each(function () {
+                var test = $(this).html().toLowerCase();
+                var columnSelected = "column-" + column;
+                if (test.indexOf(columnSelected) >= 0) {
+                    $(this).html(content);
+                }
+
+            })
+        } else if (column === "" && row !== "") {
+            tRows().children("td").each(function () {
+                var test = $(this).html().toLowerCase();
+                var rowSelected = "row-" + row;
+                if (test.indexOf(rowSelected) >= 0) {
+                    $(this).html(content);
+                }
+            })
+        } else {
+            tRows().children("td").each(function () {
+                var test = $(this).html().toLowerCase();
+                var rowSelected = "row-" + row;
+                var columnSelected = "column-" + column;
+                var product = rowSelected + columnSelected;
+                if (test.indexOf(product) >= 0) {
+                    $(this).html(content);
+                }
+            })
         }
     });
 

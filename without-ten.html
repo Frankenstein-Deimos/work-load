@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+var test1 = [1, 10, 10, 2];
+var test2 = [10, 2, 10];
+var test3 = [1, 99, 10];
+
+function withoutTen(arr) {
+    var noTenArr = arr;
+    arr.forEach(function(num, index) {
+       if (num === 10) {
+           noTenArr[index] = 0;
+       }
+    });
+
+    noTenArr.sort();
+
+    var finalArray;
+    for (var i = 0; i < noTenArr.length; i++) {
+        if (noTenArr[i] !== 0) {
+            finalArray = noTenArr.slice(i);
+            break;
+        }
+    }
+
+    var number = noTenArr.length - finalArray.length;
+    if (number !== 0) {
+        for (var i = 0; i < number; i++) {
+            finalArray.push(0);
+        }
+    }
+
+    return finalArray;
+}
+
+console.log(test1);
+console.log(withoutTen(test1));
+console.log(test2);
+console.log(withoutTen(test2));
+console.log(test3);
+console.log(withoutTen(test3));
+</script>
+</body>
+</html>

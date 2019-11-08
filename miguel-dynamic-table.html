@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table id="table"></table>
+<button id="table-button" class="table-button">Create Table</button>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    /*
+    Write a JavaScript function that creates a table,
+    accept row, column numbers from the user,
+    and input row-column number as content (e.g. Row-0 Column-0) of a cell.
+    */
+    var table = $("#table");
+    table.hide();
+
+    function createTable(rowAmount, columnNumber) {
+        var row = "<tr>";
+        for (var i = 1; i <= columnNumber; i++) {
+            var column = "<td>";
+            column += "</td>";
+            row += column;
+        }
+        row += "</tr>";
+        table.append(row);
+    }
+
+    $("#table-button").click(function () {
+        var numberRows = prompt("Enter number of rows needed.");
+        var numberColumns = prompt("Enter number of columns needed");
+
+        if (numberRows === "" || numberColumns === "") {
+            return $("body").prepend("<h1>Number of rows cannot be 0</h1>");
+        } else {
+            numberRows = parseFloat(numberRows);
+            numberColumns = parseFloat(numberColumns);
+        }
+
+        $("h1").html("");
+        table.html("");
+        table.show();
+        for (var i = 0; i < numberRows; i++) {
+            createTable(numberRows, numberColumns);
+        }
+        var tRows = $("#table tbody tr");
+        tRows.each(function (index) {
+            $(this).children("td").prepend("Row-" + (index + 1));
+            $(this).children("td").each(function (index) {
+                $(this).append("Column-" + (index + 1));
+            })
+        })
+    })
+
+</script>
+</body>
+</html>

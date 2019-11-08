@@ -48,7 +48,8 @@
         var numberColumns = prompt("Enter number of columns needed");
 
         if (numberRows === "" || numberColumns === "") {
-            return $("body").prepend("<h1>Number of rows cannot be 0</h1>");
+            $("h1").html("");
+            return $("body").prepend("<h1>Table values cannot be 0</h1>");
         } else {
             numberRows = parseFloat(numberRows);
             rowNumber = numberRows;

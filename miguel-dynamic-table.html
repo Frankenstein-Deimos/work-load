@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table id="table"></table>
+<button id="table-button" class="table-button">Create Table</button>
+<button id="change-cell-button" class="change=cell-button">Change Cell</button>
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    /*
+    Write a JavaScript function that creates a table,
+    accept row, column numbers from the user,
+    and input row-column number as content (e.g. Row-0 Column-0) of a cell.
+    */
+    var table = $("#table");
+    var cellButton = $("#change-cell-button");
+    var tRows = function () {
+        return $("#table tbody tr");
+    };
+    var rowNumber;
+    var columnNumber;
+
+    table.hide();
+    cellButton.hide();
+
+    function createTable(rowAmount, columnNumber) {
+        var row = "<tr>";
+        for (var i = 1; i <= columnNumber; i++) {
+            var column = "<td>";
+            column += "</td>";
+            row += column;
+        }
+        row += "</tr>";
+        table.append(row);
+    }
+
+    $("#table-button").click(function () {
+
+
+        var numberRows = prompt("Enter number of rows needed.");
+        var rowEntered = false;
+
+        if (numberRows === null) {
+            return "table creation: row input cancelled";
+        } else if (numberRows === "" || numberRows === 0 || numberRows < 0) {
+            alert("Row value must be at least 1 or greater");
+            numberRows = prompt("Enter number of rows needed");
+        } else {
+            while (isNaN(parseInt(numberRows))) {
+                if (numberRows === null) {
+                    return "table creation: row input cancelled";
+                } else {
+                    alert("Row value must be of number value");
+                    numberRows = prompt("Enter number of rows needed");
+                }
+            }
+            numberRows = Math.round(numberRows);
+        }
+
+        var numberColumns = prompt("Enter number of columns needed");
+        if (numberColumns === null) {
+            return "table creation: column input cancelled";
+        } else if (numberColumns === "" || numberColumns === 0 || numberColumns < 0) {
+            alert("Column value must be at least 1 or greater");
+            numberColumns = prompt("Enter number of columns needed");
+        } else {
+            while (isNaN(parseInt(numberColumns))) {
+                if (numberColumns === null) {
+                    return "table creation: column input cancelled";
+                } else {
+                    alert("Column value must be of number value");
+                    numberColumns = prompt("Enter number of column needed");
+                }
+            }
+            numberColumns = Math.round(numberColumns);
+        }
+        //
+        // if (numberRows === "" || numberColumns === "") {
+        //     $("h1").html("");
+        //     return $("body").prepend("<h1>Table values cannot be 0</h1>");
+        // } else {
+        //     numberRows = parseFloat(numberRows);
+        //     rowNumber = numberRows;
+        //     numberColumns = parseFloat(numberColumns);
+        //     columnNumber = numberColumns;
+        // }
+
+        $("h1").html("");
+        table.html("");
+        table.show();
+        for (var i = 0; i < numberRows; i++) {
+            createTable(numberRows, numberColumns);
+        }
+
+        tRows().each(function (index) {
+            // Selects each individual row's children
+            $(this).children("td").prepend("Row-" + (index + 1));
+            $(this).children("td").attr("id", "Row-" + (index + 1));
+            // Selects each individual column data from individual row above
+            $(this).children("td").each(function (index) {
+                $(this).append("Column-" + (index + 1));
+                $(this).attr("id", $(this).attr("id") + "Column-" + (index + 1));
+            })
+        });
+        cellButton.show();
+    });
+
+    cellButton.click(function () {
+        var row = prompt("Select a row number.");
+
+        if (row === "") {
+            row = 0;
+        } else if (row === null) {
+            return "row input cancelled";
+        } else {
+            while (isNaN(parseInt(row)) || parseInt(row) > rowNumber || parseInt(row) < 0) {
+                alert("Cannot retrieve row number");
+                row = prompt("Select a row number.");
+            }
+        }
+
+
+        var column = prompt("Select a column number.");
+
+        if (column === "") {
+            column = 0;
+        } else if (column === null) {
+            return "row input cancelled";
+        } else {
+            while (isNaN(parseInt(column)) || parseInt(column) > columnNumber || parseInt(column) < 0) {
+                alert("Cannot retrieve column number");
+                column = prompt("Select a column number.");
+            }
+        }
+
+        var content = prompt("Enter updated content");
+
+        if (row === 0 && column !== "") {
+
+            tRows().children("td").each(function () {
+                var test = $(this).attr("id").toLowerCase();
+                var columnSelected = "column-" + column;
+                if (test.indexOf(columnSelected) >= 0) {
+                    $(this).html(content);
+                }
+
+            })
+        } else if (column === 0 && row !== "") {
+            tRows().children("td").each(function () {
+                var test = $(this).attr("id").toLowerCase();
+                var rowSelected = "row-" + row;
+                if (test.indexOf(rowSelected) >= 0) {
+                    $(this).html(content);
+                }
+            })
+        } else if (column !== 0 && row !== 0) {
+            tRows().children("td").each(function () {
+                var test = $(this).attr("id").toLowerCase();
+                var rowSelected = "row-" + row;
+                var columnSelected = "column-" + column;
+                var product = rowSelected + columnSelected;
+                if (test.indexOf(product) >= 0) {
+                    $(this).html(content);
+                }
+            })
+        } else {
+            tRows().children("td").each(function () {
+                $(this).html(content);
+            });
+        }
+    });
+
+</script>
+</body>
+</html>

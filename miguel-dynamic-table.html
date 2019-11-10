@@ -45,54 +45,51 @@
 
     $("#table-button").click(function () {
 
-
         var numberRows = prompt("Enter number of rows needed.");
         var rowEntered = false;
+        var parsedRowCreate;
 
-        if (numberRows === null) {
-            return "table creation: row input cancelled";
-        } else if (numberRows === "" || numberRows === 0 || numberRows < 0) {
-            alert("Row value must be at least 1 or greater");
-            numberRows = prompt("Enter number of rows needed");
-        } else {
-            while (isNaN(parseInt(numberRows))) {
-                if (numberRows === null) {
-                    return "table creation: row input cancelled";
-                } else {
-                    alert("Row value must be of number value");
+        while (rowEntered === false) {
+            if (numberRows === null) {
+                return "table creation: row input cancelled";
+            } else if (isNaN(parseInt(numberRows))) {
+                alert("Row value must be of number value");
+                numberRows = prompt("Enter number of rows needed");
+            } else {
+                parsedRowCreate = parseInt(numberRows);
+                if (numberRows === "" || parsedRowCreate === 0 || parsedRowCreate < 0) {
+                    alert("Row value must be at least 1 or greater");
                     numberRows = prompt("Enter number of rows needed");
+                } else {
+                    numberRows = Math.floor((parsedRowCreate));
+                    rowNumber = numberRows;
+                    rowEntered = true;
                 }
             }
-            numberRows = Math.round(numberRows);
         }
 
         var numberColumns = prompt("Enter number of columns needed");
-        if (numberColumns === null) {
-            return "table creation: column input cancelled";
-        } else if (numberColumns === "" || numberColumns === 0 || numberColumns < 0) {
-            alert("Column value must be at least 1 or greater");
-            numberColumns = prompt("Enter number of columns needed");
-        } else {
-            while (isNaN(parseInt(numberColumns))) {
-                if (numberColumns === null) {
-                    return "table creation: column input cancelled";
+        var columnEntered = false;
+        var parsedColumnCreate;
+
+        while (columnEntered === false) {
+            if (numberColumns === null) {
+                return "table creation: column input cancelled";
+            } else if (isNaN(parseInt(numberColumns))) {
+                alert("Column value must be of number value");
+                numberColumns = prompt("Enter number of columns needed");
+            } else {
+                parsedColumnCreate = parseInt(numberColumns);
+                if (numberColumns === "" || parsedColumnCreate === 0 || parsedColumnCreate < 0) {
+                    alert("Column value must be at least 1 or greater");
+                    numberColumns = prompt("Enter number of columns needed");
                 } else {
-                    alert("Column value must be of number value");
-                    numberColumns = prompt("Enter number of column needed");
+                    numberColumns = Math.floor((parsedColumnCreate));
+                    columnNumber = numberColumns;
+                    columnEntered = true;
                 }
             }
-            numberColumns = Math.round(numberColumns);
         }
-        //
-        // if (numberRows === "" || numberColumns === "") {
-        //     $("h1").html("");
-        //     return $("body").prepend("<h1>Table values cannot be 0</h1>");
-        // } else {
-        //     numberRows = parseFloat(numberRows);
-        //     rowNumber = numberRows;
-        //     numberColumns = parseFloat(numberColumns);
-        //     columnNumber = numberColumns;
-        // }
 
         $("h1").html("");
         table.html("");
@@ -115,69 +112,93 @@
     });
 
     cellButton.click(function () {
-        var row = prompt("Select a row number.");
+            var row = prompt("Select a row number.");
+            var rowSelect = false;
+            var parsedRowSelect;
 
-        if (row === "") {
-            row = 0;
-        } else if (row === null) {
-            return "row input cancelled";
-        } else {
-            while (isNaN(parseInt(row)) || parseInt(row) > rowNumber || parseInt(row) < 0) {
-                alert("Cannot retrieve row number");
-                row = prompt("Select a row number.");
+            while (rowSelect === false) {
+                if (row === null) {
+                    return "Row selection: Cancelled";
+                } else if (row === "") {
+                    row = 0;
+                    rowSelect = true;
+                } else if (isNaN(parseInt(row))) {
+                    alert("Row selection value must be of number value");
+                    row = prompt("Select a row number.");
+                } else {
+                    parsedRowSelect = parseInt(row);
+                    if (parsedRowSelect > rowNumber || parsedRowSelect < 0) {
+                        alert("Cannot retrieve row number");
+                        row = prompt("Select a row number.");
+                    } else {
+                        row = Math.floor((parsedRowSelect));
+                        rowSelect = true;
+                    }
+                }
+            }
+
+            var column = prompt("Select a column number.");
+            var columnSelect = false;
+            var parsedColumnSelect;
+
+            while (columnSelect === false) {
+                if (column === null) {
+                    return "Column selection: Cancelled";
+                } else if (column === "") {
+                    column = 0;
+                    columnSelect = true;
+                } else if (isNaN(parseInt(column))) {
+                    alert("Column selection value must be of number value");
+                    column = prompt("Select a column number.");
+                } else {
+                    parsedColumnSelect = parseInt(column);
+                    if (parsedColumnSelect > columnNumber || parsedColumnSelect < 0) {
+                        alert("Cannot retrieve column number");
+                        column = prompt("Select a column number.");
+                    } else {
+                        column = Math.floor((parsedColumnSelect));
+                        columnSelect = true;
+                    }
+                }
+            }
+
+            var content = prompt("Enter updated content");
+
+            if (row === 0 && column !== "") {
+
+                tRows().children("td").each(function () {
+                    var test = $(this).attr("id").toLowerCase();
+                    var columnSelected = "column-" + column;
+                    if (test.indexOf(columnSelected) >= 0) {
+                        $(this).html(content);
+                    }
+
+                })
+            } else if (column === 0 && row !== "") {
+                tRows().children("td").each(function () {
+                    var test = $(this).attr("id").toLowerCase();
+                    var rowSelected = "row-" + row;
+                    if (test.indexOf(rowSelected) >= 0) {
+                        $(this).html(content);
+                    }
+                })
+            } else if (column !== 0 && row !== 0) {
+                tRows().children("td").each(function () {
+                    var test = $(this).attr("id").toLowerCase();
+                    var rowSelected = "row-" + row;
+                    var columnSelected = "column-" + column;
+                    var product = rowSelected + columnSelected;
+                    if (test.indexOf(product) >= 0) {
+                        $(this).html(content);
+                    }
+                })
+            } else {
+                tRows().children("td").each(function () {
+                    $(this).html(content);
+                });
             }
         }
-
-
-        var column = prompt("Select a column number.");
-
-        if (column === "") {
-            column = 0;
-        } else if (column === null) {
-            return "row input cancelled";
-        } else {
-            while (isNaN(parseInt(column)) || parseInt(column) > columnNumber || parseInt(column) < 0) {
-                alert("Cannot retrieve column number");
-                column = prompt("Select a column number.");
-            }
-        }
-
-        var content = prompt("Enter updated content");
-
-        if (row === 0 && column !== "") {
-
-            tRows().children("td").each(function () {
-                var test = $(this).attr("id").toLowerCase();
-                var columnSelected = "column-" + column;
-                if (test.indexOf(columnSelected) >= 0) {
-                    $(this).html(content);
-                }
-
-            })
-        } else if (column === 0 && row !== "") {
-            tRows().children("td").each(function () {
-                var test = $(this).attr("id").toLowerCase();
-                var rowSelected = "row-" + row;
-                if (test.indexOf(rowSelected) >= 0) {
-                    $(this).html(content);
-                }
-            })
-        } else if (column !== 0 && row !== 0) {
-            tRows().children("td").each(function () {
-                var test = $(this).attr("id").toLowerCase();
-                var rowSelected = "row-" + row;
-                var columnSelected = "column-" + column;
-                var product = rowSelected + columnSelected;
-                if (test.indexOf(product) >= 0) {
-                    $(this).html(content);
-                }
-            })
-        } else {
-            tRows().children("td").each(function () {
-                $(this).html(content);
-            });
-        }
-    });
+    );
 
 </script>
 </body>
